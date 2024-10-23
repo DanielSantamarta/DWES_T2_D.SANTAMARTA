@@ -5,36 +5,13 @@ abstract class Miembro{
     protected $nombre;
     protected $apellidos;
     protected $email;
-    protected int $edad;
 
-    public function __construct($id,$nombre,$apellidos,$email,$edad){
+
+    public function __construct($id,$nombre,$apellidos,$email){
         $this->id=$id;
         $this->nombre=$nombre;
         $this->apellidos=$apellidos;
         $this->email=$email;
-        $this->edad=$edad;
-    }
-
-
-
-    /**
-     * Get the value of edad
-     */ 
-    public function getEdad()
-    {
-        return $this->edad;
-    }
-
-    /**
-     * Set the value of edad
-     *
-     * @return  self
-     */ 
-    public function setEdad($edad)
-    {
-        $this->edad = $edad;
-
-        return $this;
     }
 
     /**
