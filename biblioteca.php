@@ -43,10 +43,10 @@
         </tr>
         <?php foreach ($libros as $libro) :?>
             <tr>
-                <td><?= $libros['titulo']?></td>
-                <td><?= $libros['autor']?></td>
-                <td><?= $libros['precio']?></td>
-                <td><?= $libros['categoria']?></td>
+                <td><?= $libro['titulo']?></td>
+                <td><?= $libro['autor']?></td>
+                <td><?= $libro['precio']?></td>
+                <td><?= $libro['categoria']?></td>
             </tr>
         <?php endforeach; ?>
     </table>
