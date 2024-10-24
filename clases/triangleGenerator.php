@@ -12,6 +12,3 @@
         
         return $triangulo;
     }
-        
-    $altura = 7;
-    echo "<pre>".generateTriangle($altura)."</pre>";
