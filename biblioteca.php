@@ -34,19 +34,19 @@
 
     ?>
     <h2>Información de todos los libros</h2>
-    <table>
+    <table border="1" style="border-collapse: collapse;">
         <tr>
-            <th>Título</th>
-            <th>Autor</th>
-            <th>Precio</th>
-            <th>Categoría</th>
+            <th style="padding: 8px;">Título</th>
+            <th style="padding: 8px;">Autor</th>
+            <th style="padding: 8px;">Precio</th>
+            <th style="padding: 8px;">Categoría</th>
         </tr>
         <?php foreach ($libros as $libro) :?>
             <tr>
-                <td><?= $libro['titulo']?></td>
-                <td><?= $libro['autor']?></td>
-                <td><?= $libro['precio']?></td>
-                <td><?= $libro['categoria']?></td>
+                <td style="padding: 8px;"><?= $libro['titulo']?></td>
+                <td style="padding: 8px;"><?= $libro['autor']?></td>
+                <td style="padding: 8px;"><?= $libro['precio']?></td>
+                <td style="padding: 8px;"><?= $libro['categoria']?></td>
             </tr>
         <?php endforeach; ?>
     </table>
