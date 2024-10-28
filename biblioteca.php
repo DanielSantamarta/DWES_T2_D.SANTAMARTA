@@ -45,7 +45,7 @@
             <tr>
                 <td style="padding: 8px;"><?= $libro['titulo']?></td>
                 <td style="padding: 8px;"><?= $libro['autor']?></td>
-                <td style="padding: 8px;"><?= $libro['precio']?></td>
+                <td style="padding: 8px;"><?= $libro['precio']?>€</td>
                 <td style="padding: 8px;"><?= $libro['categoria']?></td>
             </tr>
         <?php endforeach; ?>
