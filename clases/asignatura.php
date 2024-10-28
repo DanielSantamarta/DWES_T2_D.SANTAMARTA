@@ -11,21 +11,21 @@ class Asignatura {
         $this->creditos = $creditos;
     }
 
-    public function crearAsignaturasDeMuestra(){
+    public static function crearAsignaturasDeMuestra(){
         $asignaturasDeMuestra = [];
         $asig1= new Asignatura(1,"DWES",7);
-        $asignaturasDeMuestra+=$asig1;
+        $asignaturasDeMuestra[]=$asig1;
         $asig2= new Asignatura(2,"DWEC",6);
-        $asignaturasDeMuestra+=$asig2;
+        $asignaturasDeMuestra[]=$asig2;
         $asig3= new Asignatura(3,"DIW",4);
-        $asignaturasDeMuestra+=$asig3;
+        $asignaturasDeMuestra[]=$asig3;
         $asig4= new Asignatura(4,"DAW",4);
-        $asignaturasDeMuestra+=$asig4;
+        $asignaturasDeMuestra[]=$asig4;
         return $asignaturasDeMuestra;
     }
     
     public function __toString()
     {
-        return "Nombre: ".$this->nombre.", Créditos: ".$this->creditos;
+        return "<b>Nombre:</b> ".$this->nombre.", <b>Créditos:</b> ".$this->creditos;
     }
 }

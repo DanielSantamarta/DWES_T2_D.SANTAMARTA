@@ -17,13 +17,13 @@ class Profesor extends Miembro{
     public static function crearProfesoresDeMuestra(){
         $profesoresDeMuestra = [];
         $profesor1= new Profesor(1,"Steve","Wozniak","steve@apple.com","DWES");
-        $profesoresDeMuestra+=$profesor1;
+        $profesoresDeMuestra[]=$profesor1;
         $profesor2= new Profesor(2,"Ada","Lovelace","ada@gmail.com","");
-        $profesoresDeMuestra+=$profesor2;
+        $profesoresDeMuestra[]=$profesor2;
         $profesor3= new Profesor(3,"Taylor","Otwell","taylor@laravel.com","DWEC");
-        $profesoresDeMuestra+=$profesor3;
+        $profesoresDeMuestra[]=$profesor3;
         $profesor4= new Profesor(4,"Rasmus","Lerdoff","rasmus@php.com","DAW");
-        $profesoresDeMuestra+=$profesor4;
+        $profesoresDeMuestra[]=$profesor4;
         return $profesoresDeMuestra;
 
     }

@@ -96,7 +96,7 @@ abstract class Miembro{
 
     public function __toString()
     {
-        return "Nombre: ".$this->nombre." ".$this->apellidos.", Email: ".$this->email;
+        return "<b>Nombre:</b> ".$this->nombre." ".$this->apellidos.", <b>Email:</b> ".$this->email;
     }
     
 }
